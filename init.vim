@@ -50,4 +50,5 @@ set statusline+=..\ %l/%L\ ..
 " tell it to use an undo file
 set undofile
 " set a directory to store the undo history
-set undodir=/home/niamor/.config/nvim/undo
+set undodir=$HOME/.config/nvim/undo
+
