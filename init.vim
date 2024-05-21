@@ -1,5 +1,3 @@
-colorscheme nord
-
 " display relative line number 
 set rnu nu
 
