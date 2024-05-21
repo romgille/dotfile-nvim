@@ -102,23 +102,6 @@ nnoremap <leader><space> :FZF<CR>
 let g:localvimrc_whitelist=''
 let g:localvimrc_sandbox = 0
 
-" change color of the current line to easily find the cursor
-set cursorline
-
-autocmd WinEnter,BufEnter,BufWinEnter * set cursorline
-autocmd WinLeave,BufLeave,BufWinLeave * set nocursorline
-
-highlight StatusLine cterm=underline ctermfg=8 ctermbg=None
-highlight StatusLineNC cterm=underline ctermfg=8 ctermbg=None
-highlight VertSplit cterm=None ctermfg=8 ctermbg=None
-highlight LineNr ctermfg=8 ctermbg=None
-highlight LineNrAbove ctermfg=8 ctermbg=None
-highlight LineNrBelow ctermfg=8 ctermbg=None
-highlight FoldColumn ctermfg=8 ctermbg=None
-highlight SignColumn ctermfg=8 ctermbg=None
-highlight Folded cterm=bold ctermfg=2 ctermbg=None
-hi CursorLine guifg=NONE gui=NONE term=NONE cterm=NONE
-
 " Undo file
 " tell it to use an undo file
 set undofile
