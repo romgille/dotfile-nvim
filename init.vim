@@ -1,3 +1,4 @@
+colorscheme desert
 """ load vimplug
 call plug#begin('~/.vim/plugged')
   Plug 'pangloss/vim-javascript'
@@ -58,8 +59,6 @@ set signcolumn=auto
 set updatetime=750
 " enable filetype recognition for plugins and indentation
 filetype plugin indent on
-" activate syntax highlighting
-syntax on
 " make Y consistent with C and D.
 nnoremap Y y$
 " set leader key to space
@@ -68,6 +67,8 @@ let mapleader = " "
 if (has("termguicolors"))
   set termguicolors
 endif
+" activate syntax highlighting
+syntax on
 " remove the banner from the file explorer
 let g:netrw_banner=0
 " set background to transparent
